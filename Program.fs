@@ -2,7 +2,7 @@
 open System.IO
 open System.Configuration
 
-open FSharp.Data.Toolbox.SasFile.SasToText
+open FSharp.Data.Toolbox.Sas.SasToText
 
 open FSharp.Configuration
 
@@ -15,20 +15,20 @@ let main argv =
         |> List.ofArray
         |> parseCmdLine 
             {
-                SourcePath        = Settings.SourcePath        
-                OutputDir         = Settings.OutputDir         
-                ColumnDelimiter   = Settings.ColumnDelimiter   
-                RowDelimiter      = Settings.RowDelimiter      
-                TextQualifier     = Settings.TextQualifier     
-                NullValue         = Settings.NullValue         
-                WriteHeader       = Settings.WriteHeader       
-                DateFormat        = Settings.DateFormat        
-                TimeFormat        = Settings.TimeFormat        
+                SourcePath        = Settings.SourcePath
+                OutputDir         = Settings.OutputDir
+                ColumnDelimiter   = Settings.ColumnDelimiter
+                RowDelimiter      = Settings.RowDelimiter
+                TextQualifier     = Settings.TextQualifier
+                NullValue         = Settings.NullValue
+                WriteHeader       = Settings.WriteHeader
+                DateFormat        = Settings.DateFormat
+                TimeFormat        = Settings.TimeFormat
                 DateAndTimeFormat = Settings.DateAndTimeFormat 
-                Trim              = Settings.Trim              
-                TrimEnd           = Settings.TrimEnd           
-                DOP               = Settings.DOP               
-                GZip              = Settings.GzIp              
+                Trim              = Settings.Trim
+                TrimEnd           = Settings.TrimEnd
+                DOP               = Settings.DOP
+                GZip              = Settings.GzIp
             }
 
     let dflt = ConversionOptions.Default
@@ -62,4 +62,3 @@ let main argv =
 
 
     0
-    

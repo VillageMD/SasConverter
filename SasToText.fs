@@ -1,4 +1,4 @@
-﻿namespace FSharp.Data.Toolbox.SasFile
+﻿namespace FSharp.Data.Toolbox.Sas
 
 open System
 open System.IO
@@ -92,7 +92,7 @@ module SasToText =
                 writer.Write options.RowDelimiter
 
             // write lines
-            sasFile.Rows()
+            sasFile.Rows
             |> Seq.iter (fun row ->
                 let line =
                     row

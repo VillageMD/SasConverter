@@ -2,7 +2,7 @@
 module CommandLine
 
 open System
-open FSharp.Data.Toolbox.SasFile.SasToText
+open FSharp.Data.Toolbox.Sas.SasToText
 
 let rec parseCmdLine options argv = 
     let argv' = List.map 
